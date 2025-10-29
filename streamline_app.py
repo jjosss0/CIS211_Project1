@@ -12,8 +12,10 @@ page_title = 'joss | portfolio',
 page_icon='👻�',
 layout= 'wide'
 )
-data = {
-    "Project": ["Excel Dashboard", "Python App", "Quinceañera Website"],
-    "Status": ["Completed", "In Progress", "Published"],
-    "Date": [datetime(2024, 10, 20), datetime(2025, 4, 15), datetime(2025, 5, 1)]
-}
+
+#custom CSS (optional - for style)
+<style>
+    .main-header {font-size: 42px; font-weight: bold; text-align:center}
+    .sub-header {font_size: 24px; text-align:center; color: #666
+</style>
+''',unsafe_allow_html = true)
