@@ -12,3 +12,8 @@ page_title = 'joss | portfolio',
 page_icon='👻�',
 layout= 'wide'
 )
+<! DOCTYPE html>
+<HTML>
+  <HEAD>
+       <TITLE>One Column Layout</TITLE>
+   </HEAD>
