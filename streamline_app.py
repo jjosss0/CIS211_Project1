@@ -12,8 +12,8 @@ page_title = 'joss | portfolio',
 page_icon='👻�',
 layout= 'wide'
 )
-<! DOCTYPE html>
-<HTML>
-  <HEAD>
-       <TITLE>One Column Layout</TITLE>
-   </HEAD>
+data = {
+    "Project": ["Excel Dashboard", "Python App", "Quinceañera Website"],
+    "Status": ["Completed", "In Progress", "Published"],
+    "Date": [datetime(2024, 10, 20), datetime(2025, 4, 15), datetime(2025, 5, 1)]
+}
