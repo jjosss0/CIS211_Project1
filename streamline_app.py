@@ -8,7 +8,7 @@ from datetime import datetime
 
 #page config
 st.set_page_config (
-page_title = 'joss | portafolio',
-page_icon='🎯',
+page_title = 'joss | portfolio',
+page_icon='👻�',
 layout= 'wide'
 )
