@@ -19,5 +19,10 @@ st.set_page_config (
                     .sub-header {font_size: 24px; text-align:center; color: #666;}
                 </style>
             ''', unsafe_allow_html = True)
+#sidebar
+st.sidebar.title('📍navigation')
+page = st.sidebar.radio('Go to',
+                        ['🏡Home','🤠About', '💼Project','🔩Skills','📝resume','📧Contact'])
+                        
 
 
