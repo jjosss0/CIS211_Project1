@@ -14,10 +14,11 @@ st.set_page_config (
 )
 
 #custom CSS (optional - for style)
-     <style>
+st.markdown('''
+                  <style>
                     .main-header {font-size: 42px; font-weight: bold; text-align:center;}
                     .sub-header {font_size: 24px; text-align:center; color: #666;}
-                </style>
+                 </style>
             ''', unsafe_allow_html = True)
 #sidebar
 st.sidebar.title('📍navigation')
