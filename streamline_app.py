@@ -24,6 +24,10 @@ st.markdown('''
 st.sidebar.title('📍navigation')
 page = st.sidebar.radio('Go to',
                         ['🏡Home','🤠About', '💼Project','🔩Skills','📝resume','📧Contact'])
+# Home page
+if page == '🏡Home':
+   st.markdow('<p class" main-header">josmalli Olivero</p>', undafe_allow_html=true
+   st.markdow('<p class='sub-header">Aspiring Tech Professional | Medgar Evers College</p>', unsafe
                         
 
 
