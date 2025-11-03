@@ -8,14 +8,16 @@ from datetime import datetime
 
 #page config
 st.set_page_config (
-page_title = 'joss | portfolio',
-page_icon='👻�',
-layout= 'wide'
+   page_title = 'joss | portfolio',
+   page_icon='👻�',
+   layout= 'wide'
 )
 
 #custom CSS (optional - for style)
-<style>
-    .main-header {font-size: 42px; font-weight: bold; text-align:center}
-    .sub-header {font_size: 24px; text-align:center; color: #666
-</style>
-''',unsafe_allow_html = true)
+     <style>
+                    .main-header {font-size: 42px; font-weight: bold; text-align:center;}
+                    .sub-header {font_size: 24px; text-align:center; color: #666;}
+                </style>
+            ''', unsafe_allow_html = True)
+
+
