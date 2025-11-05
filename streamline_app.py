@@ -40,22 +40,22 @@ if page == '🏡Home':
       st.metric('skills','10','🚀')
    
    st.write('---')
-
-  # Introduction with columns
-  col1, col2 = st.columns([2,1])
-  with col1:
-    st.subheader('Welcome to my digital space!👋')
-    st.write('''
-  
-                I am a Computer Information Systems student passionate about web development and emerging technologies. Currently learning
-                HTML, CSS, JavaScript, and Python to build innovative solutions.
-            
-                🎯 **Current Focus:** Building interactive web applications with Streamlit
-            
-                📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
-            
-                🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
-            ''')
+   
+   #Introduction with columns
+   col1, col2 = st.columns([2,1])
+   with col1:
+      st.subheader('Welcome to my digital space!👋')
+      st.write('''
+      
+             I am a Computer Information Systems student passionate about web development and emerging technologies. Currently learning
+             HTML, CSS, JavaScript, and Python to build innovative solutions.
+         
+             🎯 **Current Focus:** Building interactive web applications with Streamlit
+         
+             📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
+         
+             🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
+         ''')
 
 
 
