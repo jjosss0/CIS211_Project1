@@ -55,8 +55,10 @@ if page == '🏡Home':
              📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
          
              🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
-         ''')
-
+             
+    with col2:
+       # Placeholder for image
+       st.image(https://github.com/jjosss0/CIS211_Project1/blob/bc25b2d3ff67041bde71e5a816270b8acd9d2ca9/brown-chihuahua-standing-in-grass-071723.jpg, use_column_width=True)
 
 
 
