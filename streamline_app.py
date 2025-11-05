@@ -39,7 +39,7 @@ with col2:
 with col3:
       st.metric('skills','10','🚀')
    
-   st.write('---')
+st.write('---')
    
    #Introduction with columns
    col1, col2 = st.columns([2,1])
