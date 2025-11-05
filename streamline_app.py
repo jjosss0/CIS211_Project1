@@ -60,8 +60,8 @@ if page == '🏡Home':
        # Placeholder for image
        st.image('https://github.com/jjosss0/CIS211_Project1/blob/bc25b2d3ff67041bde71e5a816270b8acd9d2ca9/brown-chihuahua-standing-in-grass-071723.jpg?raw=true', use_column_width=True)
 
-    # About Page
-    elif page == '🤠About':
+   # About Page
+   elif page == '🤠About':
      st.title('About Me')
    
      # Timeline of my Professional Journey
