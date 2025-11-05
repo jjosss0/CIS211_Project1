@@ -41,13 +41,15 @@ if page == '🏡Home':
    
    st.write('---')
 
-#introduction with columns 
-col1, col2, = st.columns([2,1})
-with cold1:
-   st.subheader('welcome to digital space!👋🏽)
-                st.write('''
-                i am a cumputer informtional science student passionate about web development and emering technologies. Currently learning HTML, CSS, javaScript, and Python to build innovative solutions.
-               
+ # Introduction with columns
+  col1, col2 = st.columns([2,1])
+  with col1:
+    st.subheader('Welcome to my digital space!👋')
+    st.write('''
+  
+                I am a Computer Information Systems student passionate about web development and emerging technologies. Currently learning
+                HTML, CSS, JavaScript, and Python to build innovative solutions.
+            
                 🎯 **Current Focus:** Building interactive web applications with Streamlit
             
                 📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
