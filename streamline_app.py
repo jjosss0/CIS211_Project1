@@ -39,27 +39,27 @@ if page == '🏡Home':
    with col3:
       st.metric('skills','10','🚀')
    
-st.write('---')
-   
-#Introduction with columns
-col1, col2 = st.columns([2,1])
-with col1:
-   st.subheader('Welcome to my digital space!👋')
-   st.write('''
+   st.write('---')
       
-             I am a Computer Information Systems student passionate about web development and emerging technologies. Currently learning
-             HTML, CSS, JavaScript, and Python to build innovative solutions.
+   #Introduction with columns
+   col1, col2 = st.columns([2,1])
+   with col1:
+      st.subheader('Welcome to my digital space!👋')
+      st.write('''
          
-             🎯 **Current Focus:** Building interactive web applications with Streamlit
-         
-             📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
-         
-             🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
-         ''')    
-with col2:
-       # Placeholder for image
-       st.image('https://github.com/jjosss0/CIS211_Project1/blob/bc25b2d3ff67041bde71e5a816270b8acd9d2ca9/brown-chihuahua-standing-in-grass-071723.jpg?raw=true', use_column_width=True)
-   
+                I am a Computer Information Systems student passionate about web development and emerging technologies. Currently learning
+                HTML, CSS, JavaScript, and Python to build innovative solutions.
+            
+                🎯 **Current Focus:** Building interactive web applications with Streamlit
+            
+                📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
+            
+                🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
+            ''')    
+   with col2:
+          # Placeholder for image
+          st.image('https://github.com/jjosss0/CIS211_Project1/blob/bc25b2d3ff67041bde71e5a816270b8acd9d2ca9/brown-chihuahua-standing-in-grass-071723.jpg?raw=true', use_column_width=True)
+      
 # About Page
 elif page == '🤠About':
      st.title('About Me')
