@@ -136,4 +136,7 @@ elif page == '🛠Skills':
     with col3:
         st.info('GitHub')
         st.success('Canva')
-
+# resume page 
+elif page == '📝Resume':
+    st.title( 'My Resume')
+    st.image ('https://github.com/jjosss0/CIS211_Project1/blob/9379fe8f8112444edad4da4847200655902a2014/Resume.pdf')
