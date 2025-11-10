@@ -1,10 +1,10 @@
-import streamlit as st
+   import streamlit as st
 
 #st.title('👋🏽welsome to my website')
 #st.write("i'm building this live in class!")
 
-import pandas as pd 
-from datetime import datetime
+   import pandas as pd 
+   from datetime import datetime
 
 #page config
 st.set_page_config (
@@ -32,18 +32,18 @@ if page == '🏡Home':
    #three columns for stats
    col1, col2, col3 = st.columns(3)
    
-with col1:
+   with col1:
       st.metric('GPA', '3.8','📚')
-with col2:
+   with col2:
       st.metric('project','5','💻')
-with col3:
+   with col3:
       st.metric('skills','10','🚀')
    
 st.write('---')
    
 #Introduction with columns
 col1, col2 = st.columns([2,1])
-with col1:
+   with col1:
    st.subheader('Welcome to my digital space!👋')
    st.write('''
       
@@ -56,25 +56,25 @@ with col1:
          
              🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
          ''')    
-with col2:
+   with col2:
        # Placeholder for image
        st.image('https://github.com/jjosss0/CIS211_Project1/blob/bc25b2d3ff67041bde71e5a816270b8acd9d2ca9/brown-chihuahua-standing-in-grass-071723.jpg?raw=true', use_column_width=True)
    
 # About Page
-   elif page == '🤠About':
+elif page == '🤠About':
      st.title('About Me')
 
   # Timeline of my Professional Journey
   st.subheader('My Journey 🗺️')
 
-with st.expander('2025 - Present: Medgar Evers College'):
+   with st.expander('2025 - Present: Medgar Evers College'):
     st.write('''
                 - Major: Computer Information Systems
                 - Relevant Coursework: Internet & Emerging Technologies, Programming, Database Systems, AI
                 - Activities: Track Team, Volleyball Team, Hackathon participant
             ''')
 
-with st.expander('2023 - 2025: NYC Museum School'):
+   with st.expander('2023 - 2025: NYC Museum School'):
     st.write('''
                 - Graduated with honors
                 - AP Computer Science A (Score: 5)
