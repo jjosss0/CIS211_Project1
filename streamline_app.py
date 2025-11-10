@@ -3,8 +3,8 @@ import streamlit as st
 #st.title('👋🏽welsome to my website')
 #st.write("i'm building this live in class!")
 
-   import pandas as pd 
-   from datetime import datetime
+import pandas as pd 
+from datetime import datetime
 
 #page config
 st.set_page_config (
