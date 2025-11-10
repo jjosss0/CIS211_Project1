@@ -9,7 +9,7 @@ st.set_page_config(
     layout='wide'
 )
 
-# Custom CSS (optional - for style)
+# Custom CSS
 st.markdown('''
     <style>
         .main-header {font-size: 42px; font-weight: bold; text-align:center;}
@@ -20,7 +20,7 @@ st.markdown('''
 # Sidebar
 st.sidebar.title('📍Navigation')
 page = st.sidebar.radio('Go to',
-                        ['🏡Home', '🤠About', '💼Project', '🔩Skills', '📝Resume', '📧Contact'])
+                        ['🏡Home', '🤠About', '💼Projects', '🛠Skills', '📝Resume', '📧Contact'])
 
 # Home page
 if page == '🏡Home':
@@ -38,7 +38,7 @@ if page == '🏡Home':
 
     st.write('---')
 
-    # Introduction with columns
+    # Introduction
     col1, col2 = st.columns([2, 1])
     with col1:
         st.subheader('Welcome to my digital space! 👋')
@@ -53,11 +53,9 @@ if page == '🏡Home':
     with col2:
         st.image('https://github.com/jjosss0/CIS211_Project1/blob/bc25b2d3ff67041bde71e5a816270b8acd9d2ca9/brown-chihuahua-standing-in-grass-071723.jpg?raw=true', use_column_width=True)
 
-# About Page
+# About page
 elif page == '🤠About':
     st.title('About Me')
-
-    # Timeline of my Professional Journey
     st.subheader('My Journey🏔️')
 
     with st.expander('2025 - Present: Medgar Evers College'):
@@ -77,62 +75,65 @@ elif page == '🤠About':
     st.subheader('Interests & Hobbies 🏀')
     interests = ['Web Development', 'AI/Machine Learning', 'Photography', 'Basketball', 'Travel', 'Baseball']
 
-    # Display the interests in columns
     cols = st.columns(3)
     for i, interest in enumerate(interests):
         with cols[i % 3]:
             st.info(f'🔷 {interest}')
+
+# Projects page
 elif page == '💼Projects':
-  st.title('My Projects')
-  st.write('Here are some projects I have worked on:')
-     
-    # project 1
+    st.title('My Projects')
+    st.write('Here are some projects I have worked on:')
+
+    # Project 1
     with st.container():
-     col1, col2 = st.columns([1, 2])
-  
+        col1, col2 = st.columns([1, 2])
+        with col1:
+            st.image('https://cdn-icons-png.flaticon.com/512/3075/3075977.png', use_column_width=True)
+        with col2:
+            st.subheader('🛒 E-Commerce Price Tracker')
+            st.write('Python web scraper that monitors Amazon prices and sends alerts.')
+            st.caption('**Technologies:** Python, BeautifulSoup, Streamlit')
+
+    # Project 2
+    with st.container():
+        col1, col2 = st.columns([1, 2])
+        with col1:
+            st.image('https://cdn-icons-png.flaticon.com/512/3556/3556433.png', use_column_width=True)
+        with col2:
+            st.subheader('📊 Student Grade Calculator')
+            st.write('Interactive web app for calculating and visualizing grades.')
+            st.caption('**Technologies:** Python, Pandas, Plotly')
+
+# Skills page
+elif page == '🛠Skills':
+    st.title('Technical Skills')
+
+    st.subheader('Programming Languages')
+    skills_data = {
+        'Python': 85,
+        'HTML/CSS': 70,
+        'JavaScript': 60,
+        'SQL': 50,
+        'Technical Writing': 40
+    }
+
+    for skill, level in skills_data.items():
+        col1, col2 = st.columns([1, 3])
+        with col1:
+            st.write(skill)
+        with col2:
+            st.progress(level / 100)
+
+    st.subheader('Tools & Technologies')
+    col1, col2, col3 = st.columns(3)
     with col1:
-         st.image('https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fhourofcode.com%2Flearn&ved=0CBYQjRxqFwoTCJje26P555ADFQAAAAAdAAAAABAI&opi=89978449.png')
-
+        st.success('Excel')
+        st.info('Word')
     with col2:
-        st.subheader('🛒 E-Commerce Price Tracker')
-        st.write('Python web scraper that monitors Amazon prices and sends alerts')
-        st.caption('**Technologies:** Python, BeautifulSoup, Streamlit')
+        st.warning('Access')
+        st.error('PowerPoint')
+    with col3:
+        st.info('GitHub')
+        st.success('Canva')
 
-# Project 2 
-  with st.container():
-    col1, col2 = st.columns([1,2])
-    with col1:
-      st.image('https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.needpix.com%2Fphoto%2F657153%2Fcalculator-calculate-numbers-calculation-math-numeric-add-multiply-divide&ved=0CBYQjRxqFwoTCOiut7n455ADFQAAAAAdAAAAABAj&opi=89978449.jpg')
-    with col2:
-      st.subheader('📊 Student Grade Calulator')
-      st.write('Interactive web app for calculating and visualizing grades')
-      st.caption('**Technologies:** Python, Pandas, Plotly')
-        
-elif page == '🛠 Skills':
-  st.title('Technical Skills')
-
-  # Skills with progress bars
-  st.subheader('Programming Languages')
-
-  skills_data = {
-    'Python' : 85,
-    'HTML/CSS' : 70,
-    'JavaScript' : 60,
-    'SQL' : 50,
-    'Technical Writing' : 40
-  }
-
-  for skill, level in skills_data.items():
-    col1, col2 = st.columns([1,3])
-    with col1:
-      st.write(skill)
-    with col2:
-      st.progress(level/100)
-
-  st.subheader('Tools & Technologies')
-
-  col1, col2, col3 = st.columns(3)
-  with col1:
-      st.success('Excel')
-      st.info('Word')
-      st.warning('Access')
