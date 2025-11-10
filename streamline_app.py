@@ -91,7 +91,7 @@ elif page == '💼Projects':
      col1, col2 = st.columns([1, 2])
   
     with col1:
-         st.image('https://iprx-cms-content.ams1.vultrobjects.com/Blog_How_To_Crawl_4_capcha_ded9206d5f.png')
+         st.image('https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fhourofcode.com%2Flearn&ved=0CBYQjRxqFwoTCJje26P555ADFQAAAAAdAAAAABAI&opi=89978449.png')
 
     with col2:
         st.subheader('🛒 E-Commerce Price Tracker')
@@ -102,8 +102,37 @@ elif page == '💼Projects':
   with st.container():
     col1, col2 = st.columns([1,2])
     with col1:
-      st.image('https://www.publicdomainpictures.net/pictures/90000/nahled/calculator-black-clipart.jpg')
+      st.image('https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.needpix.com%2Fphoto%2F657153%2Fcalculator-calculate-numbers-calculation-math-numeric-add-multiply-divide&ved=0CBYQjRxqFwoTCOiut7n455ADFQAAAAAdAAAAABAj&opi=89978449.jpg')
     with col2:
       st.subheader('📊 Student Grade Calulator')
       st.write('Interactive web app for calculating and visualizing grades')
       st.caption('**Technologies:** Python, Pandas, Plotly')
+        
+elif page == '🛠 Skills':
+  st.title('Technical Skills')
+
+  # Skills with progress bars
+  st.subheader('Programming Languages')
+
+  skills_data = {
+    'Python' : 85,
+    'HTML/CSS' : 70,
+    'JavaScript' : 60,
+    'SQL' : 50,
+    'Technical Writing' : 40
+  }
+
+  for skill, level in skills_data.items():
+    col1, col2 = st.columns([1,3])
+    with col1:
+      st.write(skill)
+    with col2:
+      st.progress(level/100)
+
+  st.subheader('Tools & Technologies')
+
+  col1, col2, col3 = st.columns(3)
+  with col1:
+      st.success('Excel')
+      st.info('Word')
+      st.warning('Access')
