@@ -89,7 +89,7 @@ elif page == '💼Projects':
     with st.container():
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image('https://cdn-icons-png.flaticon.com/512/3075/3075977.png', use_column_width=True)
+            st.image('https://code.org/images/tutorials/hoc2023/danceparty_ai.png', use_column_width=True)
         with col2:
             st.subheader('🛒 E-Commerce Price Tracker')
             st.write('Python web scraper that monitors Amazon prices and sends alerts.')
@@ -99,7 +99,7 @@ elif page == '💼Projects':
     with st.container():
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image('https://cdn-icons-png.flaticon.com/512/3556/3556433.png', use_column_width=True)
+            st.image('https://storage.needpix.com/rsynced_images/calculator-1464008_1280.png', use_column_width=True)
         with col2:
             st.subheader('📊 Student Grade Calculator')
             st.write('Interactive web app for calculating and visualizing grades.')
