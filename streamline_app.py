@@ -164,7 +164,7 @@ elif page == '📧Contact':
 
         🏢 **LinkedIn:** [linkedin.com/in/yourname](https://www.linkedin.com/in/josmalli-olivero-0b4b38223/)
 
-        👩‍💻 **Github:** [https://github.com/avinashjairam](https://github.com)
+        👩‍💻 **Github:** [https:https://github.com/jjosss0](https://github.com)
 
         📷 **Instagram:** [@yourhandle](https://instagram.com)
 
@@ -190,7 +190,7 @@ elif page == '📧Contact':
     # Footer
     st.write('---')
     st.markdown(
-        f'<center>Made with 💗 using Streamlit | © {dateime.now().year} Josmalli Olivero </center>',
+        f'<center>Made with 💗 using Streamlit | © {datetime.now().year} Josmalli Olivero </center>',
         unsafe_allow_html = True
     )
     
