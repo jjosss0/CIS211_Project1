@@ -140,16 +140,16 @@ elif page == '🛠Skills':
 elif page == '📝Resume':
     st.title( 'My Resume')
     
-  # Read PDF from my GitHub repository
-  with open('Resume.pdf', 'rb') as pdf_file:
-    PDFbyte = pdf_file.read()
+    # Read PDF from my GitHub repository
+    with open('Resume.pdf', 'rb') as pdf_file:
+        PDFbyte = pdf_file.read()
       
-  st.download_button(
-    label ='🔻 Download Full Resume (PDF)',
-    data = PDFbyte,
-    file_name = 'Resume.pdf',
-    mime ='application/pdf'
-  )
+    st.download_button(
+        label ='🔻 Download Full Resume (PDF)',
+        data = PDFbyte,
+        file_name = 'Resume.pdf',
+        mime ='application/pdf'
+    )
 
 elif page == '📩 Contact':
   st.title("Let's Connect!")
