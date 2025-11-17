@@ -151,7 +151,7 @@ elif page == '📝Resume':
         mime ='application/pdf'
     )
 
-elif page == '📩 Contact':
+elif page == '📧Contact':
   st.title("Let's Connect!")
 
   col1, = st.columns(1)
