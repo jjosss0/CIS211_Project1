@@ -140,20 +140,22 @@ elif page == '🛠Skills':
 elif page == '📝Resume':
     st.title( 'My Resume')
    import base64
+   import requests
 
-    # Load PDF file from your folder
-    with open("resume/Josmalli_Olivero_Resume.pdf", "rb") as pdf_file:
-        pdf_bytes = pdf_file.read()
-        base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
+    resume_url = "https://raw.githubusercontent.com/jjosss0/CIS211_Project1/9379fe8f8112444edad4da4847200655902a2014/Resume.pdf"
+
+    # Get PDF from GitHub
+    response = requests.get(resume_url)
+    pdf_bytes = response.content
+    base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
 
     # Display PDF in website
     pdf_display = f'''
-        <embed src="data:application/pdf;base64,{base64_pdf}"
-        width="800" height="1000" type="application/pdf">
+        <embed src="{resume_url}" width="800" height="1000" type="application/pdf">
     '''
     st.markdown(pdf_display, unsafe_allow_html=True)
 
-    # Optional: Download button
+    # Download Button
     st.download_button(
         label="⬇️ Download Resume",
         data=pdf_bytes,
