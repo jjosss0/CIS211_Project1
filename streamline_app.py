@@ -139,4 +139,24 @@ elif page == '🛠Skills':
 # resume page 
 elif page == '📝Resume':
     st.title( 'My Resume')
-    st.image ('https://github.com/jjosss0/CIS211_Project1/blob/9379fe8f8112444edad4da4847200655902a2014/Resume.pdf')
+   import base64
+
+    # Load PDF file from your folder
+    with open("resume/Josmalli_Olivero_Resume.pdf", "rb") as pdf_file:
+        pdf_bytes = pdf_file.read()
+        base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
+
+    # Display PDF in website
+    pdf_display = f'''
+        <embed src="data:application/pdf;base64,{base64_pdf}"
+        width="800" height="1000" type="application/pdf">
+    '''
+    st.markdown(pdf_display, unsafe_allow_html=True)
+
+    # Optional: Download button
+    st.download_button(
+        label="⬇️ Download Resume",
+        data=pdf_bytes,
+        file_name="Josmalli_Olivero_Resume.pdf",
+        mime="application/pdf"
+    )
