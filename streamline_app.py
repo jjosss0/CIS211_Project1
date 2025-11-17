@@ -139,13 +139,16 @@ elif page == '🛠Skills':
 # resume page 
 elif page == '📝Resume':
     st.title( 'My Resume')
-   resume_url = "https://raw.githubusercontent.com/jjosss0/CIS211_Project1/9379fe8f8112444edad4da4847200655902a2014/Resume.pdf"
-
-    response = requests.get(resume_url)
-
+  # Read PDF from my GitHub repository
+    with open('my_resume.pdf', 'rb') as pdf_file:
+      PDFbyte = pdf_file.read()
+    
     st.download_button(
-        label="⬇️ Download Resume",
-        data=response.content,
-        file_name="Josmalli_Olivero_Resume.pdf",
-        mime="application/pdf"
+      label ='🔻 Download Full Resume (PDF)',
+      data = PDFbyte,
+      file_name = 'my_resume.pdf',
+      mime ='application/pdf'
     )
+    
+    
+    
