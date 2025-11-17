@@ -162,7 +162,7 @@ elif page == '📩 Contact':
     st.write('''
         📧 **Email:** josmalli09@gmail.com
 
-        🏢 **LinkedIn:** [linkedin.com/in/yourname](https://linkedin.com)
+        🏢 **LinkedIn:** [linkedin.com/in/yourname](https://www.linkedin.com/in/josmalli-olivero-0b4b38223/)
 
         👩‍💻 **Github:** [https://github.com/avinashjairam](https://github.com)
 
