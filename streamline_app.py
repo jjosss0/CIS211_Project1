@@ -141,7 +141,7 @@ elif page == '📝Resume':
     st.title( 'My Resume')
     
   # Read PDF from my GitHub repository
-  with open('my_resume.pdf', 'rb') as pdf_file:
+  with open('resume.pdf', 'rb') as pdf_file:
     PDFbyte = pdf_file.read()
   
   st.download_button(
@@ -190,7 +190,7 @@ elif page == '📩 Contact':
     # Footer
     st.write('---')
     st.markdown(
-        f'<center>Made with 💗 using Streamlit | © {dateime.now().year} Avinash Jairam </center>',
+        f'<center>Made with 💗 using Streamlit | © {dateime.now().year} Josmalli Olivero </center>',
         unsafe_allow_html = True
     )
     
