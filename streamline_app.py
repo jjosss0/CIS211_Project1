@@ -30,11 +30,11 @@ if page == '🏡Home':
     # Three columns for stats
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric('GPA', '3.8', '📚')
+        st.metric('GPA', '3.0', '📚')
     with col2:
-        st.metric('Projects', '5', '💻')
+        st.metric('Projects', '1', '💻')
     with col3:
-        st.metric('Skills', '10', '🚀')
+        st.metric('Skills', '5', '🚀')
 
     st.write('---')
 
