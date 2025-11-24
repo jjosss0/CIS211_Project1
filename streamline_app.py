@@ -73,7 +73,7 @@ elif page == '🤠About':
         ''')
 
     st.subheader('Interests & Hobbies 🏀')
-    interests = ['Web Development', 'AI/Machine Learning', 'reading', 'Runing', 'Travel', ' Trying new food']
+    interests = ['Web Development', 'AI/Machine Learning', 'Reading', 'Runing', 'Travel', ' Trying new food']
 
     cols = st.columns(3)
     for i, interest in enumerate(interests):
@@ -91,7 +91,7 @@ elif page == '💼Projects':
         with col1:
             st.image('https://code.org/images/tutorials/hoc2023/danceparty_ai.png', use_column_width=True)
         with col2:
-            st.subheader('🛒 E-Commerce Price Tracker')
+            st.subheader('🛒  Building interactive web applications with Streamlit')
             st.write('Python web scraper that monitors Amazon prices and sends alerts.')
             st.caption('**Technologies:** Python, BeautifulSoup, Streamlit')
 
@@ -101,20 +101,20 @@ elif page == '💼Projects':
         with col1:
             st.image('https://storage.needpix.com/rsynced_images/calculator-1464008_1280.png', use_column_width=True)
         with col2:
-            st.subheader('📊 Student Grade Calculator')
+            st.subheader('📄It will showcase my résumé and skills for future job opportunities.')
             st.write('Interactive web app for calculating and visualizing grades.')
-            st.caption('**Technologies:** Python, Pandas, Plotly')
+            st.caption('**Technologies:** Python ')
 
 # Skills page
 elif page == '🛠Skills':
-    st.title('Technical Skills')
+    st.title('Skills & Competencies')
 
-    st.subheader('Programming Languages')
+    st.subheader('Technical & Professional Skills')
     skills_data = {
         'Python': 30,
         'Microsoft Excel': 80,
         'JavaScript': 5,
-        'interpretation': 100,
+        'Interpretation': 100,
         'Technical Writing': 50
     }
 
@@ -152,7 +152,7 @@ elif page == '📝Resume':
     )
 
 elif page == '📧Contact':
-  st.title("Let's Connect!")
+  st.title("Contact me!")
 
   col1, = st.columns(1)
 
@@ -166,6 +166,7 @@ elif page == '📧Contact':
 
         👩‍💻 **Github:** [https:https://github.com/jjosss0](https://github.com)
 
+        📁**Indeed:** [profile.indeed.com](https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage)
 
     ''')
 
