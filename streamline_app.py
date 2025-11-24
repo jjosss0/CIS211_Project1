@@ -92,18 +92,18 @@ elif page == '💼Projects':
             st.image('https://code.org/images/tutorials/hoc2023/danceparty_ai.png', use_column_width=True)
         with col2:
             st.subheader('🛒  Building interactive web applications with Streamlit')
-            st.write('📄It will showcase my résumé and skills for future job opportunities.')
+            st.write('📄It will showcase my resume and skills for future job opportunities.')
             st.caption('**Technologies:** Python, BeautifulSoup, Streamlit')
 
     # Project 2
-   # with st.container():
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image('https://storage.needpix.com/rsynced_images/calculator-1464008_1280.png', use_column_width=True)
-        with col2:
-            st.subheader('📄It will showcase my résumé and skills for future job opportunities.')
-            st.write('Interactive web app for calculating and visualizing grades.')
-            st.caption('**Technologies:** Python ')
+    # with st.container():
+    #     col1, col2 = st.columns([1, 2])
+    #     with col1:
+    #         st.image('https://storage.needpix.com/rsynced_images/calculator-1464008_1280.png', use_column_width=True)
+    #     with col2:
+    #         st.subheader('📄It will showcase my résumé and skills for future job opportunities.')
+    #         st.write('Interactive web app for calculating and visualizing grades.')
+    #         st.caption('**Technologies:** Python ')
 
 # Skills page
 elif page == '🛠Skills':
