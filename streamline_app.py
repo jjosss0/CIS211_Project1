@@ -48,7 +48,7 @@ if page == '🏡Home':
 
         🎯 **Current Focus:** Building interactive web applications with Streamlit  
         📚 **Currently Learning:** Internet and Emerging Technologies (CIS 211)  
-        🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
+        🌱 **Fun Fact:** I am proficient in simultaneous interpretation(interpreter speaks at the same time as the original speaker, with only a minimal delay.). 
         ''')
     with col2:
         st.image('https://github.com/jjosss0/CIS211_Project1/blob/bc25b2d3ff67041bde71e5a816270b8acd9d2ca9/brown-chihuahua-standing-in-grass-071723.jpg?raw=true', use_column_width=True)
@@ -58,14 +58,14 @@ elif page == '🤠About':
     st.title('About Me')
     st.subheader('My Journey🏔️')
 
-    with st.expander('2025 - Present: Medgar Evers College'):
+    with st.expander('2023 - Present: Medgar Evers College'):
         st.write('''
         - Major: Computer Information Systems  
-        - Relevant Coursework: Internet & Emerging Technologies, Programming, Database Systems, AI  
-        - Activities: Track Team, Volleyball Team, Hackathon participant
+        - Relevant Coursework: Internet & Emerging Technologies, Contemporary Comp Apps, Comp Ghaphics   
+        - Activities: Read
         ''')
 
-    with st.expander('2023 - 2025: NYC Museum School'):
+   # with st.expander('2023 - 2025: NYC Museum School'):
         st.write('''
         - Graduated with honors  
         - AP Computer Science A (Score: 5)  
@@ -73,7 +73,7 @@ elif page == '🤠About':
         ''')
 
     st.subheader('Interests & Hobbies 🏀')
-    interests = ['Web Development', 'AI/Machine Learning', 'Photography', 'Basketball', 'Travel', 'Baseball']
+    interests = ['Web Development', 'AI/Machine Learning', 'reading', 'Runing', 'Travel', ' Trying new food']
 
     cols = st.columns(3)
     for i, interest in enumerate(interests):
@@ -111,11 +111,11 @@ elif page == '🛠Skills':
 
     st.subheader('Programming Languages')
     skills_data = {
-        'Python': 85,
-        'HTML/CSS': 70,
-        'JavaScript': 60,
-        'SQL': 50,
-        'Technical Writing': 40
+        'Python': 30,
+        'Microsoft Excel': 80,
+        'JavaScript': 5,
+        'interpretation': 100,
+        'Technical Writing': 50
     }
 
     for skill, level in skills_data.items():
@@ -166,7 +166,6 @@ elif page == '📧Contact':
 
         👩‍💻 **Github:** [https:https://github.com/jjosss0](https://github.com)
 
-        📷 **Instagram:** [@yourhandle](https://instagram.com)
 
     ''')
 
